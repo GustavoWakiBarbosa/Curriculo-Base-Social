@@ -1,13 +1,75 @@
-#nav-container {
+nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
     width: 100vw;
     height: 60vh;
     background-color: #0bb57b;
-
-
 }
 
 body {
     overflow-x: hidden;
+}
+
+.nome-profissao {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    color: #ffffff;
+}
+
+.lista {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    top: 20%;
+    right: 3%;
+}
+
+.lista li {
+    color: #ffffff;
+    margin-left: 10px;
+    display: inline-block;
+    list-style: none
+}
+
+.redes-sociais:hover {
+    color: #02C215;
+}
+
+#logo-github {
+    position: relative;
+    left: 5%;
+    bottom: 1%;
+    width: 90px;
+}
+
+/* #logo-github:hover {
+    img: url(imagens/GITHUB-LOGO\ verde.png)
+} */
+
+#logo-linkedin {
+    position: relative;
+    left: 2%;
+    bottom: 1%;
+    width: 45px;
+}
+
+#logo-insta {
+    position: relative;
+    bottom: 0.5%;
+    width: 70px;
+}
+
+#ajuste-insta {
+    position: relative;
+    right: 5%;
+}
+
+.conteudo {
+    position: absolute;
+    top: 30%;
+    width: 100vw;
 }
 
 @font-face {
@@ -19,38 +81,6 @@ body {
     font-family: 'LeagueSpartan';
 }
 
-.container {
-    position: relative;
-    /* z-index: 1; */
-}
-
-#textos {
-    color: #ffffff;
-    position: absolute;
-    top: 50px;
-    left: 200px;
-}
-
-.redes-sociais {
-    color: #ffffff;
-    font-size: 25px;
-    position: absolute;
-    top: 50px;
-    right: 100px;
-}
-
-.redes-sociais:hover {
-    color: chartreuse;
-}
-
-#instagram {
-    margin-right: 183px;
-}
-
-
-#linkedin {
-    margin-right: 90px;
-}
 
 .background {
     padding-right: 5px;
@@ -96,10 +126,9 @@ body {
 
 
 .retangulo-sobre h2 {
-    font-size: 35px;
+    font-size: 15px;
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 8px;
     text-align: center;
     color: #ffffff;
 
@@ -152,11 +181,12 @@ body {
 
 .container-footer {
     padding: 30px;
+    margin-bottom: 30px;
     text-align: center;
     background-color: #0bb57b;
     width: 100%;
     height: 50vh;
-
+    border-radius: 10px;
 }
 
 .container-footer h2 {
